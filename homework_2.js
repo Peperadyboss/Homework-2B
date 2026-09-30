@@ -67,7 +67,7 @@ async function dropCourse(studentId, courseId) {
 }
 
 (async () => {
-  await mongoose.connect('mongodb+srv://baokhangryan_db_user:(password)@cluster0.7xo86oo.mongodb.net/?appName=Cluster0');
+  await mongoose.connect('mongodb+srv://baokhangryan_db_user:(password)@cluster0.7xo86oo.mongodb.net/?appName=Cluster0'); //it's my mongo pass so I can't give it
   await Student.deleteMany({});
   await Course.deleteMany({});
 
